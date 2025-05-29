@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    background-color: rgba(128, 128, 128, 0.221);
+}
+
+.rr{
+    border: 2px solid red;
+}
+
+.bb{
+    border: 2px solid blue;
+}
+
+.gg{
+    border: 2px solid green;
+}
+
