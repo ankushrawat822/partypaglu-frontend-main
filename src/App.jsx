@@ -9,6 +9,10 @@ import Navbar from './common/Navbar'
 import PaymentSuccess from './payment/PaymentSuccess'
 import ForgotPassword from './auth/ForgotPassword'
 import Homepage from './component/HomePage'
+import GuestProfilePage from './component/GuestProfile/GuestProfilePage'
+import Header from './component/Home/Header'
+import PartyPage from './component/Party/PartyPage'
+import PartyDetails from './component/Party/PartyDetails'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -34,6 +38,18 @@ function App() {
       path : 'signup',
       element :  <SignUp></SignUp>
      },
+     {
+      path: '/party',
+       element : <PrivateRoutes element={<><PartyPage /></>} />,
+     },
+     {
+      path: '/party-details/:id',
+       element : <PrivateRoutes element={<><PartyDetails /></>} />,
+     },
+      {
+       path: '/profile',
+        element : <PrivateRoutes element={<><GuestProfilePage /></>} />,
+      },
      {
       path : 'payment-success',
       element :  <PaymentSuccess></PaymentSuccess>

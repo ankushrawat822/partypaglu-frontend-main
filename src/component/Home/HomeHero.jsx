@@ -65,15 +65,18 @@ const HomeHero = () => {
          <div className='bg-[#323232] my-3 w-[220px] md:my-0 h-[3px] md:w-1 md:h-12'></div>
           {/* div 4*/}
           <div className='flex flex-row gap-4 text-center'>
+
             <div>
             <p className='font-semibold text-[14px]'>Join</p>
            <p className='text-[14px]'>Now</p>
 
-            </div>     
+          </div>     
 
+          <Link to="/dashboard">
               <button className='bg-red-600 rounded-[30px] px-3 py-2'><FaArrowRightLong className='font-bold text-[19px]' />
-            
+        
             </button>
+          </Link>
          
          </div>
      </div>
